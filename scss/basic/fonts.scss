@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./basic/fonts.scss/OpenSans-SemiboldItalic.eot');
+    src: url('./basic/fonts.scss/OpenSans-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('./basic/fonts.scss/OpenSans-SemiboldItalic.woff2') format('woff2'),
+        url('./basic/fonts.scss/OpenSans-SemiboldItalic.woff') format('woff'),
+        url('./basic/fonts.scss/OpenSans-SemiboldItalic.ttf') format('truetype'),
+        url('./basic/fonts.scss/OpenSans-SemiboldItalic.svg#OpenSans-SemiboldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
