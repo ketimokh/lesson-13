@@ -1,2 +1,146 @@
 @import './basic/reset.scss';
 @import './basic/fonts.scss';
+@import './moduls/variable.scss';
+@import './moduls/classes.scss';
+
+.conteiner{
+    @extend %container;
+}
+.position{ 
+    background-image:url(../image/mohamed.png);
+    background-repeat: no-repeat;
+    color: rgba(0, 0, 0, 0.253);
+    height: 324px;
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center; 
+        color: $color02;
+        padding: 10px 50px 0 100px;
+        ul{
+            display: flex;
+            li{
+                margin-right:50px;
+                a{
+                    color: $color02;
+                    font-size: $fontsize01;
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+    .home{
+        padding-top: 100px;
+        padding-left: 100px;
+        color: white;
+        .main{
+            font-size: $fontsize04;
+            padding-bottom: 20px;
+        }
+        .main-p{
+            display: flex;
+            padding: 0 10px 0 10px;
+            font-size: $fontsize01;
+            .main-p1{
+                padding-right: 10px;
+                border-right: 2px solid $color02;
+            }
+            .main-p2{
+                padding-left: 10px;
+            }
+        }
+    }  
+}    
+
+.quality{
+    margin: 0 40px 20px 100px;
+    a{
+        font-size: $fontsize01;
+        color: $color03;
+        padding-bottom: 5px;
+    }
+    h2{
+        font-size: 42px;
+        color: $color01;
+
+    }
+
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 100px 40px 100px;
+    position: relative;
+    .box-block{
+        width: 536px;
+        display: flex;
+        align-items: center;
+        .hotel{
+            border-right: 50px solid $color03 ;  
+            height: 180px;
+            padding-bottom: 10px;
+        }
+        img{
+            width: 168px;
+            height: 190px;
+            padding-bottom: 10px;
+        }
+        a{
+            font-size: $fontsize01;
+            padding: 10px 10px 10px;
+            color: $color03;
+        }
+        h2{
+            font-size: $fontsize03;
+            padding: 10px 10px 10px;   
+        }
+        p{
+            font-size: $fontsize01;
+            color: $color04;
+            height: 62px;
+            padding: 10px 10px 10px;
+
+        }
+        .arrow{
+            position: absolute;
+            width: 14px;
+            margin-left: 250px;
+            margin-bottom: 200px;
+        }
+    }
+}
+.label{
+    display: flex;
+    margin: 5px 50px 5px 50px;
+    position: relative;
+
+    .titl-box{
+        color: $color03; 
+        margin: 5px 10px 5px 30px;
+    }
+    .input{
+        padding: 20px 60px 20px 60px;
+        margin: 5px 10px 5px 30px;
+    }
+    .send{
+            position:absolute;
+            margin-left: 950px;
+        .send1{
+            padding: 25px 100px 20px 100px;
+            margin: 20px 10px 0 10px;
+            background-color: $color03;
+            color: $color05;
+        }
+        .plane1{
+            position: absolute;
+            margin-left: 200px;
+            padding-bottom: 100px;
+        }
+    }
+    
+}
