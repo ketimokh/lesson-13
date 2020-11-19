@@ -2,6 +2,7 @@
 @import './basic/fonts.scss';
 @import './moduls/variable.scss';
 @import './moduls/classes.scss';
+@import './main/media.scss';
 
 .conteiner{
     @extend %container;
@@ -9,8 +10,8 @@
 .position{ 
     background-image:url(../image/mohamed.png);
     background-repeat: no-repeat;
-    color: rgba(0, 0, 0, 0.253);
     height: 324px;
+    width: 100%;
     header{
         display: flex;
         flex-wrap: wrap;
@@ -74,7 +75,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 40px 100px 40px 100px;
+    margin: 40px 5px 40px 5px;
+    padding: 0 120px 0 120px;
     position: relative;
     .box-block{
         width: 536px;
@@ -118,6 +120,7 @@
     display: flex;
     margin: 5px 50px 5px 50px;
     position: relative;
+    width: 100%;
 
     .titl-box{
         color: $color03; 
@@ -131,8 +134,8 @@
             position:absolute;
             margin-left: 950px;
         .send1{
-            padding: 25px 100px 20px 100px;
-            margin: 20px 10px 0 10px;
+            padding: 20px 60px 20px 60px;
+            margin: 25px 50px 5px 10px;
             background-color: $color03;
             color: $color05;
         }
@@ -140,7 +143,56 @@
             position: absolute;
             margin-left: 200px;
             padding-bottom: 100px;
+            z-index: 5;
         }
     }
     
+}
+.conteiner{
+    @extend %container;
+    .flex-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: $color01;
+        color: $color02;
+        margin: 20px 20px 20px 0;
+        padding: 50px 100px 10px 100px;
+        a{
+            font-size: $fontsize01;
+            padding-bottom: 10px;
+        }
+        h3{
+            font-size: $fontsize05;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+        p{
+            font-size: $fontsize01;
+            padding-left: 10px;
+            padding-bottom: 10px;
+        }
+        .paragrap{
+            padding-top: 50px;
+        }
+        img{
+            width:35px ;
+            height: 35px;
+            padding-top:10px ;
+            padding-bottom: 5px;
+        }
+        .contact-box{
+            display: flex;
+            align-items: center;
+            margin: 5px ;
+            img{
+                width: 20px;
+                height: 20px;
+                padding-top: 5px;
+            }
+        }
+        .port{
+            padding: 50px 0  0 50px;
+        }
+    }
 }

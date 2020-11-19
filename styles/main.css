@@ -50,11 +50,23 @@ a {
   width: 100%;
   margin: 2px auto; }
 
+@media (max-width: 780px) {
+  .navbar {
+    width: 100%;
+    display: none;
+    left: 0;
+    right: 0; }
+  .box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; } }
+
 .position {
   background-image: url(../image/mohamed.png);
   background-repeat: no-repeat;
-  color: rgba(0, 0, 0, 0.253);
-  height: 324px; }
+  height: 324px;
+  width: 100%; }
   .position header {
     display: flex;
     flex-wrap: wrap;
@@ -102,7 +114,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 40px 100px 40px 100px;
+  margin: 40px 5px 40px 5px;
+  padding: 0 120px 0 120px;
   position: relative; }
   .flex .box-block {
     width: 536px;
@@ -137,7 +150,8 @@ a {
 .label {
   display: flex;
   margin: 5px 50px 5px 50px;
-  position: relative; }
+  position: relative;
+  width: 100%; }
   .label .titl-box {
     color: blue;
     margin: 5px 10px 5px 30px; }
@@ -148,11 +162,49 @@ a {
     position: absolute;
     margin-left: 950px; }
     .label .send .send1 {
-      padding: 25px 100px 20px 100px;
-      margin: 20px 10px 0 10px;
+      padding: 20px 60px 20px 60px;
+      margin: 25px 50px 5px 10px;
       background-color: blue;
       color: #CECECE; }
     .label .send .plane1 {
       position: absolute;
       margin-left: 200px;
-      padding-bottom: 100px; }
+      padding-bottom: 100px;
+      z-index: 5; }
+
+.conteiner .flex-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: black;
+  color: #fff;
+  margin: 20px 20px 20px 0;
+  padding: 50px 100px 10px 100px; }
+  .conteiner .flex-box a {
+    font-size: 14px;
+    padding-bottom: 10px; }
+  .conteiner .flex-box h3 {
+    font-size: 24px;
+    padding-bottom: 10px;
+    padding-top: 10px; }
+  .conteiner .flex-box p {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 10px; }
+  .conteiner .flex-box .paragrap {
+    padding-top: 50px; }
+  .conteiner .flex-box img {
+    width: 35px;
+    height: 35px;
+    padding-top: 10px;
+    padding-bottom: 5px; }
+  .conteiner .flex-box .contact-box {
+    display: flex;
+    align-items: center;
+    margin: 5px; }
+    .conteiner .flex-box .contact-box img {
+      width: 20px;
+      height: 20px;
+      padding-top: 5px; }
+  .conteiner .flex-box .port {
+    padding: 50px 0  0 50px; }
